@@ -1,0 +1,79 @@
+{
+  "name": "NotaFiscalEntrada",
+  "fields": [
+    {
+      "fieldName": "idNfe",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "crt",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ufEmitente",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ufDestinatario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "valorItem",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "valorIPI",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "valorFrete",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "valorSeguro",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "valorOutros",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "cnpjEmitente",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cnpjDestinatario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "categoria",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "normaExecucao",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "produtoEntrada",
+      "otherEntityRelationshipName": "notaFiscalEntrada",
+      "relationshipName": "produtoEntrada"
+    }
+  ],
+  "entityTableName": "nota_fiscal_entrada",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "documentparser",
+  "clientRootFolder": "documentparser",
+  "databaseType": "sql",
+  "changelogDate": "20210528022810"
+}

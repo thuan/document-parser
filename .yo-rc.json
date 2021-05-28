@@ -37,7 +37,7 @@
     "packageFolder": "com/auditcom/documentparser",
     "jwtSecretKey": "Yzc4MjBhNDZlYzM5YjZlZWQ4MGYxNzk5MjBkMTVhZDhiNmExZGU3MmVlYTY4ZWY5ZmM5YTU0YzM5MGQ5MmQ2MGFjYWJlNmJjYmRlZjFhZGY3NDY2ZjJkYmFjMmE2NmVlOTJkODhhNGNkOThmNzU4ZTA3M2U5NjBhOTQ1NTJmMDM=",
     "languages": ["en", "fr"],
-    "lastLiquibaseTimestamp": 1621536234000,
-    "entities": ["AlimentoAcordanteEntrada"]
+    "lastLiquibaseTimestamp": 1622168891000,
+    "entities": ["AlimentoAcordanteEntrada", "NotaFiscalEntrada", "ProdutoEntrada"]
   }
 }

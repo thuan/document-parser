@@ -16,7 +16,10 @@
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210520184354_added_entity_AlimentoAcordanteEntrada.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210528022810_added_entity_NotaFiscalEntrada.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210528022811_added_entity_ProdutoEntrada.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20210528022810_added_entity_constraints_NotaFiscalEntrada.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

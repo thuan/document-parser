@@ -1,0 +1,36 @@
+entity NotaFiscalEntrada {
+	idNfe String required
+    crt Integer
+    ufEmitente String
+    ufDestinatario String
+    valorItem Double
+    valorIPI Double
+    valorFrete Double
+    valorSeguro Double
+    valorOutros Double
+    cnpjEmitente String
+    cnpjDestinatario String
+    categoria String
+    normaExecucao String
+}
+entity ProdutoEntrada{
+	percentualICMS Double
+    cfop Integer
+    cst String
+}
+
+relationship OneToMany {
+NotaFiscalEntrada to ProdutoEntrada{notaFiscalEntrada}
+Department to
+	/**
+	* Another side of the same relationship
+	*/
+	Employee{department}
+  ProdutoEntrada{notaFiscalEntrada} to NotaFiscalEntrada{produtoEntrada}
+}
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl

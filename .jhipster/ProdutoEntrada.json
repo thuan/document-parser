@@ -1,0 +1,38 @@
+{
+  "name": "ProdutoEntrada",
+  "fields": [
+    {
+      "fieldName": "percentualICMS",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "cfop",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "cst",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "notaFiscalEntrada",
+      "otherEntityRelationshipName": "produtoEntrada",
+      "relationshipName": "notaFiscalEntrada"
+    }
+  ],
+  "entityTableName": "produto_entrada",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "documentparser",
+  "clientRootFolder": "documentparser",
+  "databaseType": "sql",
+  "changelogDate": "20210528022811"
+}
